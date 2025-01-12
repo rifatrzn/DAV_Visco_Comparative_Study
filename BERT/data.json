@@ -1,0 +1,70 @@
+[
+  {
+    "query": "Show the monthly sales trend for 2020",
+    "intent": "trend analysis",
+    "entities": {
+      "metric": "sales",
+      "time_period": "monthly",
+      "year": "2020"
+    },
+    "visualization": "line graph"
+  },
+  {
+    "query": "Compare revenue between product A and product B last quarter",
+    "intent": "comparison",
+    "entities": {
+      "metrics": "revenue",
+      "products": [
+        "product A",
+        "product B"
+      ],
+      "time_period": "last quarter"
+    },
+    "visualization": "bar chart"
+  },
+  {
+    "query": "What were the top 5 selling products by units sold in 2021?",
+    "intent": "ranking",
+    "entities": {
+      "metric": "units sold",
+      "top_n": 5,
+      "year": "2021"
+    },
+    "visualization": "horizontal bar chart"
+  },
+  {
+    "query": "Show the year-over-year growth rate of online sales from 2018 to 2022",
+    "intent": "trend analysis",
+    "entities": {
+      "metric": "online sales",
+      "time_period": "yearly",
+      "start_year": "2018",
+      "end_year": "2022"
+    },
+    "visualization": "area chart"
+  },
+  {
+    "query": "Break down total revenue by region for the current fiscal year",
+    "intent": "distribution",
+    "entities": {
+      "metric": "revenue",
+      "group_by": "region",
+      "time_period": "current fiscal year"
+    },
+    "visualization": "pie chart"
+  },
+  {
+    "query": "Visualize the correlation between marketing spend and sales revenue over the last 3 years",
+    "intent": "correlation analysis",
+    "entities": {
+      "metrics": [
+        "marketing spend",
+        "sales revenue"
+      ],
+      "time_period": "last 3 years"
+    },
+    "visualization": "scatter plot"
+  }
+
+]
+

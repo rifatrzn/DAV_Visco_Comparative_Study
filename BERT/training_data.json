@@ -1,0 +1,57 @@
+[
+    {
+        "query": "Sales revenue changes over time presented quarterly.",
+        "intent": "trend analysis",
+        "entities": {
+            "time_period": "quarterly"
+
+        },
+        "visualization": "line graph"
+    },
+    {
+        "query": "Accumulated sales revenue per quarter for the entire time period.",
+        "intent": "accumulation",
+        "entities": {
+            "time_period": "quarterly",
+            "accumulation_basis": "total"
+        },
+        "visualization": "bar chart"
+    },
+    {
+        "query": "Sales revenue changes quarterly per category. The graph displays the sales revenue for both categories over time.",
+        "intent": "trend analysis",
+        "entities": {
+            "time_period": "quarterly"
+        },
+        "visualization": "stacked bar chart"
+    },
+    {
+        "query": "Accumulated monthly revenue compared to the mean sales revenues over the time. This graph provides insights into busy vs. slow months.",
+        "intent": "trend analysis",
+        "entities": {
+            "time_period": "monthly"
+        },
+        "visualization": "line chart"
+    },
+    {
+        "query": "The top five cities with the highest total sales revenues.",
+        "intent": "top entities ranking",
+        "entities": {
+            "entity": "city",
+            "metric": "sales revenue",
+            "number": 5
+        },
+        "visualization": "horizontal bar chart"
+    },
+    {
+        "query": "The top five cities with the highest revenue in the Tooling category.",
+        "intent": "category specific top entities ranking",
+        "entities": {
+            "entity": "city",
+            "metric": "sales revenue",
+            "category": "Tooling",
+            "number": 5
+        },
+        "visualization": "horizontal bar chart"
+    }
+]
