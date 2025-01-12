@@ -1,0 +1,7 @@
+query,intent,visualization,entities.metric,entities.time_period,entities.year,entities.metrics,entities.products,entities.top_n,entities.start_year,entities.end_year,entities.group_by
+Show the monthly sales trend for 2020,trend analysis,line graph,sales,monthly,2020,,,,,,
+Compare revenue between product A and product B last quarter,comparison,bar chart,,last quarter,,revenue,"['product A', 'product B']",,,,
+What were the top 5 selling products by units sold in 2021?,ranking,horizontal bar chart,units sold,,2021,,,5.0,,,
+Show the year-over-year growth rate of online sales from 2018 to 2022,trend analysis,area chart,online sales,yearly,,,,,2018,2022,
+Break down total revenue by region for the current fiscal year,distribution,pie chart,revenue,current fiscal year,,,,,,,region
+Visualize the correlation between marketing spend and sales revenue over the last 3 years,correlation analysis,scatter plot,,last 3 years,,"['marketing spend', 'sales revenue']",,,,,

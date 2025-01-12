@@ -1,0 +1,7 @@
+query,intent,visualization,entities.time_period,entities.accumulation_basis,entities.entity,entities.metric,entities.number,entities.category
+Sales revenue changes over time presented quarterly.,trend analysis,line graph,quarterly,,,,,
+Accumulated sales revenue per quarter for the entire time period.,accumulation,bar chart,quarterly,total,,,,
+Sales revenue changes quarterly per category. The graph displays the sales revenue for both categories over time.,trend analysis,stacked bar chart,quarterly,,,,,
+Accumulated monthly revenue compared to the mean sales revenues over the time. This graph provides insights into busy vs. slow months.,trend analysis,line chart,monthly,,,,,
+The top five cities with the highest total sales revenues.,top entities ranking,horizontal bar chart,,,city,sales revenue,5.0,
+The top five cities with the highest revenue in the Tooling category.,category specific top entities ranking,horizontal bar chart,,,city,sales revenue,5.0,Tooling

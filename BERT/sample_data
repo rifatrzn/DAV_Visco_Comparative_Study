@@ -1,0 +1,234 @@
+[
+  {
+    "query": "Show the monthly sales trend for 2020",
+    "intent": "trend analysis",
+    "entities": {
+      "metric": "sales",
+      "time_period": "monthly",
+      "year": "2020"
+    },
+    "visualization": "line graph"
+  },
+  {
+    "query": "Compare revenue between product A and product B last quarter",
+    "intent": "comparison",
+    "entities": {
+      "metrics": "revenue",
+      "products": ["product A", "product B"],
+      "time_period": "last quarter"
+    },
+    "visualization": "bar chart"
+  },
+  {
+    "query": "What were the top 5 selling products by units sold in 2021?",
+    "intent": "ranking",
+    "entities": {
+      "metric": "units sold",
+      "top_n": 5,
+      "year": "2021"
+    },
+    "visualization": "horizontal bar chart"
+  },
+  {
+    "query": "Show the year-over-year growth rate of online sales from 2018 to 2022",
+    "intent": "trend analysis",
+    "entities": {
+      "metric": "online sales",
+      "time_period": "yearly",
+      "start_year": "2018",
+      "end_year": "2022"
+    },
+    "visualization": "area chart"
+  },
+  {
+    "query": "Break down total revenue by region for the current fiscal year",
+    "intent": "distribution",
+    "entities": {
+      "metric": "revenue",
+      "group_by": "region",
+      "time_period": "current fiscal year"
+    },
+    "visualization": "pie chart"
+  },
+  {
+    "query": "Visualize the correlation between marketing spend and sales revenue over the last 3 years",
+    "intent": "correlation analysis",
+    "entities": {
+      "metrics": ["marketing spend", "sales revenue"],
+      "time_period": "last 3 years"
+    },
+    "visualization": "scatter plot"
+  },
+  {
+    "query": "Compare sales of different products.",
+    "intent": "compare_quantities",
+    "entities": {
+      "data_type": "quantities",
+      "comparison_dimension": "product"
+    },
+    "suggested_visualization": "Bar Chart"
+  },
+  {
+    "query": "Display the growth of website traffic over a year.",
+    "intent": "show_trends",
+    "entities": {
+      "data_type": "traffic",
+      "time_period": "yearly"
+    },
+    "suggested_visualization": "Line Chart"
+  },
+  {
+    "query": "Illustrate the breakdown of expenses in a budget.",
+    "intent": "highlight_proportions",
+    "entities": {
+      "data_type": "expenses",
+      "aspect": "budget_breakdown"
+    },
+    "suggested_visualization": "Pie Chart"
+  },
+  {
+    "query": "Identify correlations between marketing spend and ROI.",
+    "intent": "represent_relationships",
+    "entities": {
+      "data_type_1": "marketing_spend",
+      "data_type_2": "ROI"
+    },
+    "suggested_visualization": "Scatter Plot"
+  },
+  {
+    "query": "Show the age distribution of survey respondents.",
+    "intent": "visualize_distribution",
+    "entities": {
+      "data_type": "age",
+      "aspect": "survey_population"
+    },
+    "suggested_visualization": "Histogram"
+  },
+  {
+    "query": "Evaluate the performance of a product in various areas.",
+    "intent": "compare_multiple_categories",
+    "entities": {
+      "data_type": "product_performance",
+      "comparison_dimension": "area"
+    },
+    "suggested_visualization": "Radar Chart"
+  },
+  {
+    "query": "Display regional sales performance on a map.",
+    "intent": "visualize_geospatial_data",
+    "entities": {
+      "data_type": "sales_performance",
+      "dimension": "region"
+    },
+    "suggested_visualization": "Map"
+  },
+  {
+    "query": "Identify hotspots of customer activity in a shopping mall.",
+    "intent": "visualize_data_density",
+    "entities": {
+      "data_type": "customer_activity",
+      "location": "shopping_mall"
+    },
+    "suggested_visualization": "Heatmap"
+  },
+  {
+    "query": "Compare revenue, cost, and profit in three dimensions.",
+    "intent": "represent_three_dimensional_data",
+    "entities": {
+      "data_types": ["revenue", "cost", "profit"]
+    },
+    "suggested_visualization": "Bubble Chart"
+  },
+  {
+    "query": "Show the distribution of marketing expenditures.",
+    "intent": "emphasize_specific_parts",
+    "entities": {
+      "data_type": "marketing_expenditures"
+    },
+    "suggested_visualization": "Donut Chart"
+  },
+  {
+    "query": "Sales revenue changes over time presented either monthly or quarterly.",
+    "intent": "trend analysis",
+    "entities": {
+      "time_period": ["monthly", "quarterly"]
+    },
+    "suggested_visualization": "Line Chart"
+  },
+  {
+    "query": "Accumulated sales revenue per quarter for the entire time period.",
+    "intent": "accumulation",
+    "entities": {
+      "accumulation_basis": "quarterly",
+      "time_period": ["monthly", "quarterly"]
+    },
+    "suggested_visualization": "Bar Chart"
+  },
+  {
+    "query": "Sales revenue changes quarterly per category. The graph displays the sales revenue for both categories over time.",
+    "intent": "category trend analysis",
+    "entities": {
+      "time_period": "quarterly",
+      "analysis_dimension": "category"
+    },
+    "suggested_visualization": "Stacked Bar Chart"
+  },
+  {
+    "query": "Accumulated monthly revenue compared to the mean sales revenues over the time. This graph provides insights into busy vs. slow months.",
+    "intent": "accumulation comparison",
+    "entities": {
+      "accumulation_basis": "monthly",
+      "comparison_basis": "mean"
+    },
+    "suggested_visualization": "Line Chart with Markers"
+  },
+  {
+    "query": "The top five cities with the highest total sales revenues.",
+    "intent": "top entities ranking",
+    "entities": {
+      "entity": "city",
+      "metric": "sales revenue",
+      "number": 5
+    },
+    "suggested_visualization": "Horizontal Bar Chart"
+  },
+  {
+    "query": "The top five cities with the highest revenue in the Tooling category.",
+    "intent": "category specific top entities ranking",
+    "entities": {
+      "entity": "city",
+      "metric": "sales revenue",
+      "category": "Tooling",
+      "number": 5
+    },
+    "suggested_visualization": "Horizontal Bar Chart"
+  },
+  {
+    "query": "How have our sales figures changed month-over-month last year?",
+    "intent": "trend analysis",
+    "entities": {
+      "time_period": "monthly",
+      "year": "last year"
+    },
+    "suggested_visualization": "Line Chart"
+  },
+  {
+    "query": "Show total revenue by product category for Q2.",
+    "intent": "category analysis",
+    "entities": {
+      "time_period": "Q2",
+      "analysis_dimension": "product category"
+    },
+    "suggested_visualization": "Pie Chart"
+  },
+  {
+    "query": "What's the average deal size for each sales rep this quarter?",
+    "intent": "performance analysis",
+    "entities": {
+      "time_period": "this quarter",
+      "metric": "deal size",
+      "dimension": "sales rep"
+    },
+    "suggested_visualization": "Bar Chart"
+  }
+]
